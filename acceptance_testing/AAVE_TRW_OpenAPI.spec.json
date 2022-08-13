@@ -1,0 +1,91 @@
+{
+    
+    "openapi": "3.0.0",
+    "info": {
+      "title": "Aave Protocol API",
+      "description": "This is the TRW Aave protocol API",
+      "contact": {
+        "email": "wecare@aave.com"
+      },
+      "license": {
+        "name": "MIT License",
+        "url": "https://opensource.org/licenses/MIT"
+      },
+      "version": "1.0.0"
+    },
+    "servers": [
+      {
+        "url": "https://aave-api-v2.aave.com",
+        "description": "Aave Api URL"
+      }
+    ],
+    "tags": [
+      {
+        "name": "data",
+        "description": "Get Aave protocol data"
+      },
+      {
+        "name": "addresses",
+        "description": "Get Aave protocol addresses"
+      }
+    ],
+    "paths": {
+      "/addresses/status": {
+        "get": {
+          "tags": [
+            "addresses"
+          ],
+          "summary": "Returns screening response for an ethereum address",
+          "description": "Returns true or false based on address assesment from TRM Labs, which combines on-chain data and real-world investigations to identify financial crime and other harmful activities.",
+          "parameters": [
+            {
+              "name": "address",
+              "in": "path",
+              "description": "Valid Ethereum address",
+              "required": true,
+              "style": "simple",
+              "explode": false,
+              "schema": {
+                "type": "string"
+              },
+              "example": "0x098B716B8Aaf21512996dC57EB0615e2383E2f96"
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Address risk screening response",
+              "content": {
+                "application/json": {
+                  "schema": {
+                    "$ref": "#/components/schemas/inline_response_200_6"
+                  }
+                }
+              }
+            },
+            "204": {
+              "description": "Indicates that the Database is not synchronised. Please contact the Aave team.\n"
+            },
+            "400": {
+              "description": "URI parameter is not a valid eth address\n"
+            },
+            "500": {
+              "description": "Something failed in the Service. Please contact the Aave team !\n"
+            }
+          }
+        }
+      }
+    },
+    "components": {
+        "schemas": {
+    "inline_response_200_6": {
+        "type": "object",
+        "properties": {
+          "addressAllowed": {
+            "type": "boolean",
+            "example": false
+          }
+        }
+      }
+    }
+  }
+}
