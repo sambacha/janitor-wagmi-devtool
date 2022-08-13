@@ -2,6 +2,11 @@
 
 This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
 
+1. Install
+2. Chrome -> Extenstion -> Load Unpacked -> (wherever you cloned this repo)
+3. Click Globe and load Ext Dialog
+
+![](https://d.pr/i/XDjBlT.jpeg)
 
 ## Hacking
 
