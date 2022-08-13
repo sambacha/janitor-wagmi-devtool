@@ -1,0 +1,29 @@
+{
+  "icons": {
+    "16": "./gen-assets/icon16.png",
+    "48": "./gen-assets/icon48.png",
+    "128": "./gen-assets/icon128.png"
+  },
+  "manifest_version": 3,
+  "action": {
+    "default_icon": {
+      "16": "./gen-assets/icon16.png",
+      "48": "./gen-assets/icon48.png"
+    },
+    "default_popup": "./static/popup/index.html"
+  },
+  "version": "0.0.0",
+  "name": "With wagmi",
+  "description": "A basic Plasmo extension.",
+  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "options_ui": {
+    "page": "./static/options/index.html",
+    "open_in_tab": true
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://*/*"
+  ]
+}
