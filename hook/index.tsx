@@ -49,6 +49,9 @@ import { IClientMeta } from "@walletconnect/types";
 import { ethers } from "ethers";
 import axios from "axios";
 import networkInfo from "./networkInfo";
+import * as React from "react";
+
+
 
 const slicedText = (txt: string) => {
   return txt.length > 6

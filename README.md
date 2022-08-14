@@ -2,11 +2,24 @@
 
 This is a [Plasmo extension](https://docs.plasmo.com/) project bootstrapped with [`plasmo init`](https://www.npmjs.com/package/plasmo).
 
+<<<<<<< HEAD
 1. Install
 2. Chrome -> Extenstion -> Load Unpacked -> (wherever you cloned this repo)
 3. Click Globe and load Ext Dialog
 
 ![](https://d.pr/i/XDjBlT.jpeg)
+||||||| cb3393b
+=======
+see `~hook`; primarily lifted from [source, https://github.com/apoorvlathey/impersonator](https://github.com/apoorvlathey/impersonator). 
+
+## TODO
+
+This should only really work with walletconnect impersonting, then metamask connecting. In theory. YMMV. 
+
+## Alternative methods
+
+[see https://github.com/GiovanniFerrara/react-debugger-hook](https://github.com/GiovanniFerrara/react-debugger-hook), injection perhaps. Tho some more complex frontends (like oasis) may involve registration (via SWIE and then use a JWT based off ur account to maintain an entry in their database).
+>>>>>>> 913b2f64e3322aba4b6aeb8c78c63d151ddb0276
 
 ## Hacking
 

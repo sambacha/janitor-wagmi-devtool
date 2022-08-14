@@ -12,10 +12,10 @@
     },
     "default_popup": "./static/popup/index.html"
   },
-  "version": "0.0.0",
-  "name": "With wagmi",
-  "description": "A basic Plasmo extension.",
-  "author": "Plasmo Corp. <foss@plasmo.com>",
+  "version": "0.0.1",
+  "name": "Web3 Browser Devtool",
+  "description": "Web3 Intercept Provider and Debugger",
+  "author": "0xJanitor. <janitor@ethereum.org>",
   "options_ui": {
     "page": "./static/options/index.html",
     "open_in_tab": true
